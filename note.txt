@@ -1,0 +1,9 @@
+0
+    对于已经纳入版本管理的文件，即使在.gitignore文件中添加了忽略规则，也无法生效。
+这是因为.gitinore只能忽略那些原来没有被track的文件。解决办法是：先删除本地缓存，再提交。
+命令如下：
+    git rm -r --cached .
+    git add .
+    git commit -m 'update .gitignore'
+    git push origin (branch)
+
