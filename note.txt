@@ -7,3 +7,9 @@
     git commit -m 'update .gitignore'
     git push origin (branch)
 
+
+	
+	
+	git fetch
+	git checkout -b abc origin/abc
+	
